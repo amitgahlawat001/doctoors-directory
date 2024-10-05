@@ -43,14 +43,14 @@ const DoctorList = ({
 
                     <div className='paginationBtn'>
                         {Array.from({ length: totalPages }, (_, index) => (
-                            <a
+                            <span
                                 key={index}
                                 onClick={() => paginate(index + 1)}
                                 disabled={currentPage === index + 1}
                                 className={currentPage === index + 1 ? 'disabled' : ''}
                             >
                                 {index + 1}
-                            </a>
+                            </span>
                         ))}
                     </div>
                 </>}

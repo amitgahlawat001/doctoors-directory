@@ -282,7 +282,7 @@ h1 {
   margin: 20px 0;
 }
 
-.paginationBtn a {
+.paginationBtn span {
   font-size: 15px;
   color: #111111;
   padding: 8px 16px;
@@ -291,7 +291,7 @@ h1 {
   border: 1px solid #ddd;
 }
 
-a.disabled {
+.disabled {
   pointer-events: none;
   color: gray;
   cursor: not-allowed;

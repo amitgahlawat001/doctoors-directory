@@ -1,15 +1,6 @@
 import React from "react";
 
 const Card = ({ data, openViewModal }) => {
-    // console.log("data?.profile_img", URL.createObjectURL(data?.profile_img))
-    const imageUrl = typeof data?.profile_img === "string" ? data?.profile_img : data.profile_img.map(file => {
-        return {
-            uid: file.uid,
-            name: file.name,
-            status: file.status,
-            url: file.url || (file.originFileObj ? URL.createObjectURL(file.originFileObj) : null),
-        };
-    });
     return (
         <>
             <div className="card" onClick={() => openViewModal(data)}>

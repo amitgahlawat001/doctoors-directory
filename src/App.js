@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import FilterForm from "./Component/FilterForm";
 import DetailModal from "./Component/DetailModal";
 import AddModal from "./Component/AddModal";
-const { Header, Content, Footer } = Layout;
+const { Content, Footer } = Layout;
 
 function App() {
   const [locationDropDownList, setLocationDropDownList] = useState([]);
