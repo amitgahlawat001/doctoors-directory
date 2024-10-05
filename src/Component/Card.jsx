@@ -4,7 +4,7 @@ const Card = ({ data, openViewModal }) => {
     return (
         <>
             <div className="card" onClick={() => openViewModal(data)}>
-                <div class="best">
+                <div className="best">
                     {data.rating}
                 </div>
                 <div className="img">
