@@ -46,7 +46,7 @@ function App() {
 
   useEffect(() => {
     handleFilter(activeFilter);
-  }, [doctors]);
+  }, [doctors, activeFilter]);
 
   const handleFilterReset = () => {
     setTimeout(() => {
