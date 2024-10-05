@@ -34,8 +34,8 @@ const DoctorList = ({
             {loader ? <Spin tip="Loading" size="large" /> :
                 <>
                     <Row gutter={[15, 15]}>
-                        {currentItems.map((doctor) => (
-                            <Col md={{ span: 8 }} lg={{ span: 6 }}>
+                        {currentItems.map((doctor, index) => (
+                            <Col md={{ span: 8 }} lg={{ span: 6 }} key={index}>
                                 <Card data={doctor} openViewModal={openViewModal} />
                             </Col>
                         ))}
