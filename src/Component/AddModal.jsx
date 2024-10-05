@@ -17,10 +17,11 @@ const AddModal = ({ close, visible, setDoctors, doctors }) => {
     }
     const [formValues, setFormValues] = useState(initialValues)
 
-    const handleChange = ({ fileList }) => {
+    const handleChange = (file) => {
+        console.log("uploaded file", file)
         setFormValues({
             ...formValues,
-            profile_img: fileList,
+            profile_img: file.fileList,
         });
     };
 
